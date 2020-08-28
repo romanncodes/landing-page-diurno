@@ -1,0 +1,133 @@
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+.header {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+.header img {
+  height: 30px;
+}
+
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style-type: none; /* quita la viñeta*/
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--DesaturatedBlue);
+  margin-left: 32px;
+}
+.seccion1 {
+  display: flex;
+  flex-direction: column-reverse;
+  /*margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 100px;*/
+  margin: 100px 30px 0px 30px;
+}
+
+.contenido1 h1 {
+  text-align: center;
+}
+
+.contenido1 p {
+  text-align: center;
+}
+
+.image1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form1 input {
+  padding: 15px;
+  margin-bottom: 8px;
+}
+
+.form1 button {
+  padding: 15px;
+  background: var(--BrightBlue);
+  color: var(--LightGrayishBlue);
+  font-weight: bold;
+  border: 0px;
+  box-shadow: 3px 3px 10px grey;
+  border-radius: 4px;
+}
+
+/*         SECCION 2    */
+.seccion2 {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 100px 30px 0px 30px;
+}
+
+.contenido2 h3 {
+  text-align: center;
+}
+
+.link2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link2 a {
+  color: var(--ModerateCyan);
+  text-decoration: none;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--ModerateCyan);
+  padding-bottom: 4px;
+}
+.link2 a img {
+  height: 20px;
+  margin-left: 8px;
+}
+
+.image2 img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .seccion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .form1 input {
+    margin-right: 8px;
+    height: 15px;
+  }
+  .form1 button {
+    box-sizing: border-box;
+  }
+}
